@@ -1,42 +1,72 @@
-<html>
-    <head>
-        <title>My color card</title>
-        <style>
-            *{font-size: 16px;}
-            body {
-                background-color : lightgray;
-            }
-            h1{color : purple;}
-            h2{color : darkblue;}
-            p{color : dimgrey;}
-            .my-detail{color : darkgreen;
-            font-weight: bold;}
-            #my-card {
-                background-color: lightcyan ;
-            }
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cartoon Character Card</title>
 
+    <style>
+        /* Universal Selector - applies to everything on the page */
+        * {
+            font-size: 16px;
+        }
 
+        /* Element Selectors */
+        body {
+            background-color: lightyellow;
+        }
 
-        </style>
-        
-    </head>
-    <body>
-        <h1>My Color Card</h1>
-        <p style="color: crimson;">Hi this is my very own web page</p>
-        <div id="my-card">
-            <h2>About me</h2>
-            <p class="my-detail">My name is Ahmad</p>
-            <p class="my-detail">My favourite colon is black</p>
-            <p class="my-detail">My favourite subject is computer</p>
-            <p class="my-detail">My favourite food is burger</p>
+        h1 {
+            color: darkblue;
+        }
 
+        h2 {
+            color: purple;
+        }
 
-        </div>
-        <h2>My vafourite thing</h2>
-        <p>My favourite animal is cat</p>
-        <p>My favourite sport is cricket</p>
-        
+        p {
+            color: dimgray;
+        }
 
-    </body>
+        /* Class Selector */
+        .cartoon-detail {
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #cartoon-card {
+            background-color: lightcyan;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Cartoon Character Card</h1>
+
+    <!-- Inline CSS -->
+    <p style="color: crimson;">Meet my favourite cartoon character!</p>
+
+    <div id="cartoon-card">
+
+        <h2>About My Character</h2>
+
+        <p class="cartoon-detail">Character Name: Doraemon</p>
+        <p class="cartoon-detail">Best Friend: Nobita</p>
+        <p class="cartoon-detail">Favourite Food: Dorayaki</p>
+        <p class="cartoon-detail">Special Power: Future Gadgets</p>
+
+    </div>
+
+    <h2>Why I Like This Character</h2>
+
+    <p>Doraemon is kind, helpful, and funny.</p>
+    <p>He always tries to help his friends solve problems.</p>
+    <p>He teaches us about friendship and creativity.</p>
+
+</body>
+
 </html>
