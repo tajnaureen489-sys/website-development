@@ -2,130 +2,104 @@
 <html>
 
 <head>
-    <title>My Weather App Homepage</title>
-
+    <title>My Ice Cream Shop Menu</title>
     <style>
-        /* Universal selector: applies basic settings to the full page */
-        * {
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Body background uses colour, image pattern, repeat, position, and attachment */
         body {
-            background-color: #87ceeb;
-            background-image: radial-gradient(circle, white 2px, transparent 3px);
-            background-size: 40px 40px;
-            background-repeat: repeat;
-            background-position: top center;
-            background-attachment: fixed;
-            color: white;
+            font-family: Arial, sans-serif;
+            background-color: #fff4f8;
             text-align: center;
+            color: #4a2c2a;
         }
 
         h1 {
+            color: #d63384;
             font-size: 36px;
-            color: white;
         }
 
-        .subtitle {
-            font-size: 18px;
-            color: #f0f8ff;
-        }
-
-        .weather-card {
-            width: 400px;
-            border: 3px solid white;
-            border-radius: 20px;
-            background-image: linear-gradient(to bottom right, #1e90ff, #87cefa);
-        }
-
-        .weather-icon {
-            font-size: 70px;
-            animation: floatCloud 3s infinite alternate;
-        }
-
-        #temperature {
-            font-size: 48px;
+        h1+p {
+            color: #8a2be2;
             font-weight: bold;
-            color: #fffacd;
+            background-color: #ffe3f1;
+            border-radius: 10px;
         }
 
-        .details {
-            font-size: 18px;
-            color: white;
+        .shop-description::first-letter {
+            font-size: 36px;
+            color: #ff1493;
+            font-weight: bold;
         }
 
-        .forecast-section {
-            width: 600px;
-            border: 3px solid white;
+        .menu-box {
+            width: 420px;
+            background-color: white;
+            border: 3px solid #ff69b4;
             border-radius: 15px;
-            background-image: radial-gradient(circle, white, #add8e6);
-            color: #003366;
+            margin: 20px auto;
+            padding: 20px;
         }
 
-        .forecast-title {
-            color: #003366;
+        ul {
+            padding: 0;
         }
 
-        .day {
-            border: 2px solid #4682b4;
-            font-size: 17px;
-            color: #003366;
+        ul>li {
+            list-style: none;
+            background-color: #fff0f5;
+            color: #5c2a4a;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #ffb6c1;
         }
 
-        /* Group selector: styles both headings together */
-        h2,
-        h3 {
+        ul>li:nth-child(3) {
+            background-color: #fff3cd;
+            color: #b85c00;
+            border: 3px solid #ffa500;
+        }
+
+        ul>li:hover {
+            background-color: #ff69b4;
             color: white;
+            cursor: pointer;
+            transform: scale(1.05);
         }
 
-        /* CSS animation using @keyframes */
-        @keyframes floatCloud {
-            from {
-                transform: translateY(0);
-            }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-            to {
-                transform: translateY(20px);
-            }
+        button:hover {
+            background-color: #8a2be2;
         }
     </style>
 </head>
 
 <body>
-
-    <h1>My Weather App Homepage</h1>
-
-    <p class="subtitle">
-        Check today's weather and plan your day better.
+    <h1>My Ice Cream Shop Menu</h1>
+    <p>Welcome to Scoops of Joy!</p>
+    <p class="shop-description">
+        We serve colourful, creamy, and delicious ice cream flavours.
     </p>
-
-    <div class="weather-card">
-        <h2>Today's Weather</h2>
-
-        <div class="weather-icon">Cloud</div>
-
-        <p id="temperature">28°C</p>
-
-        <p class="details">City: Bengaluru</p>
-        <p class="details">Condition: Partly Cloudy</p>
-        <p class="details">Humidity: 62%</p>
-        <p class="details">Wind Speed: 12 km/h</p>
+    <div class="menu-box">
+        <h2>Today's Ice Cream Flavours</h2>
+        <ul>
+            <li>Chocolate Delight</li>
+            <li>Strawberry Swirl</li>
+            <li>Mango Magic - Today's Special</li>
+            <li>Vanilla Dream</li>
+            <li>Blueberry Blast</li>
+        </ul>
+        <button>Order Now</button>
     </div>
-
-    <h2>Weekly Forecast</h2>
-
-    <div class="forecast-section">
-        <h3 class="forecast-title">Next 5 Days</h3>
-
-        <p class="day">Monday: Sunny - 30°C</p>
-        <p class="day">Tuesday: Cloudy - 27°C</p>
-        <p class="day">Wednesday: Rainy - 24°C</p>
-        <p class="day">Thursday: Windy - 26°C</p>
-        <p class="day">Friday: Stormy - 23°C</p>
-    </div>
-
 </body>
 
 </html>
