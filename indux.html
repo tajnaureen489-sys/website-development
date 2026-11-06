@@ -2,128 +2,80 @@
 <html>
 
 <head>
-    <title>My Restaurant Menu Card</title>
+    <title>School Club Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STEP 1 - Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Georgia, serif;
-            background-color: #fff8e7;
-            color: #3b2f2f;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            padding: 30px 15px;
         }
 
-        .menu-card {
-            width: 600px;
-            border: 3px solid #8b4513;
-            border-radius: 15px;
-            background-color: #ffffff;
-            box-shadow: 0 0 20px #8b4513;
-        }
-
-        .restaurant-name {
-            font-size: 42px;
-            font-weight: bold;
-            color: #8b0000;
+        h1 {
             text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px 4px #d2b48c;
+            color: #FF5A43;
         }
 
-        .tagline {
-            font-size: 18px;
-            font-style: italic;
+        .club-card {
             text-align: center;
-            color: #6b4226;
-            text-decoration: underline;
+            border: 2px solid #FF5A43;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff8e1;
         }
 
-        .menu-section {
-            border: 2px solid #d2b48c;
-            box-shadow: 0 0 8px #d2b48c;
-        }
-
-        .section-title {
-            font-size: 26px;
-            color: #a0522d;
-            text-transform: capitalize;
-            text-decoration: overline;
-        }
-
-        .dish-name {
-            font-size: 20px;
-            font-weight: bold;
-            color: #4b0082;
-            text-transform: capitalize;
-        }
-
-        .dish-name:hover {
-            transform: scale(1.1);
-        }
-
-        .dish-description {
-            font-size: 15px;
-            line-height: 1.6;
-            text-indent: 30px;
-            color: #555555;
-        }
-
-        .special-offer {
-            font-size: 22px;
-            font-weight: bold;
-            color: #ffffff;
-            background-color: #b22222;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 3px #000000;
-            box-shadow: 0 0 12px #b22222;
-            transform: rotate(-2deg);
+        .club-card h3 {
+            color: #FF5A43;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="menu-card">
+    <h1>My School Clubs</h1>
 
-        <h1 class="restaurant-name">Tasty Treat Cafe</h1>
+    <!-- STEP 2 - container keeps the layout neat and centred -->
+    <div class="container">
 
-        <p class="tagline">Fresh food, happy mood!</p>
+        <!-- STEP 3 - row holds all the columns in one horizontal line -->
+        <div class="row">
 
-        <div class="menu-section">
-            <h2 class="section-title">starters</h2>
+            <!-- STEP 4 - col-12: full width on phones
+                   col-md-6: half width on tablets
+                   col-lg-4: one-third on desktops -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="club-card">
+                    <h3>Coding Club</h3>
+                    <p>I learn how to create websites, games, and simple apps.</p>
+                </div>
+            </div>
 
-            <p class="dish-name">cheesy garlic bread</p>
-            <p class="dish-description">
-                Crispy bread topped with melted cheese, garlic butter, and fresh herbs.
-            </p>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="club-card">
+                    <h3>Science Club</h3>
+                    <p>I enjoy doing experiments and discovering how things work.</p>
+                </div>
+            </div>
 
-            <p class="dish-name">spicy corn bites</p>
-            <p class="dish-description">
-                Crunchy corn bites served with a tangy dip for a perfect evening snack.
-            </p>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="club-card">
+                    <h3>Art Club</h3>
+                    <p>I love drawing, painting, and creating colourful designs.</p>
+                </div>
+            </div>
+
         </div>
-
-        <div class="menu-section">
-            <h2 class="section-title">main course</h2>
-
-            <p class="dish-name">creamy pasta bowl</p>
-            <p class="dish-description">
-                Soft pasta cooked in creamy sauce with vegetables and delicious seasoning.
-            </p>
-
-            <p class="dish-name">veggie pizza</p>
-            <p class="dish-description">
-                A colourful pizza loaded with fresh vegetables, cheese, and tasty sauce.
-            </p>
-        </div>
-
-        <p class="special-offer">Weekend special: 20% off!</p>
-
     </div>
+
+    <!-- STEP 5 - Bootstrap JS script -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
 
 </body>
 
